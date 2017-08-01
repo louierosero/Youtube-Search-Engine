@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;		// Segoe UI font is available only on Windows Operating Systems.
+	line-height: 1.6em;
+	color: #666;
+	background: url('../img/simple_dashed.png');		// Alternate Background e1e1e1;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+#container {
+	width: 960px;
+	margin: auto;
+	background: #fff;
+}
+
+#container header {
+	padding: 30px 20px;
+	background: #184384;
+	color: #fff;
+}
+
+#container header h1 {
+	margin-bottom: 5px;
+}
+
+#container header h1 span {
+    background: #d2030a;
+    padding: 0 10px 5px;
+    border-radius: 15px;
+}
+
+#container section {
+	padding: 30px 20px 20px;
+}
+
+#container footer {
+	background: #00255d;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px 0;
+	color: #cecece;
+}
+
+.clearfix {
+	clear: both;		// This is used to clear both css float property.
+}
+

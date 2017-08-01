@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Youtube Search Engine</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>You<span>tube</span> Search Engine</h1>
+			<p>Search all Youtube Videos.</p>
+		</header>
+		<section>
+			<form id="search-form" name="search-form" onsubmit="return search()">
+				<div class="fieldcontainer">
+					<input type="search" id="query" class="search-field" placeholder="Search Youtube Video's..." />
+					<input type="submit" name="search-btn" id="search-btn" value="" />
+				</div>
+				<ul id="result"></ul>
+				<div id="buttons"></div>
+			</form>
+		</section>
+		<footer>
+			<p>Copyright &copy; 2017. All Rights Reserved.</p>
+		</footer>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
