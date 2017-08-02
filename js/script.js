@@ -16,4 +16,41 @@ $(function() {
 			$(icon).animate({ right: '364px' }, 400, function() {});
 		}
 	});
+	
+	$('#search-form').submit( function(e) {
+        e.preventDefault();
+    });
 });
+
+function search() {
+	// Clear Results
+	$('#results').html('');
+	$('#buttons').html('');
+	
+	// Get Form Inputs
+	q = $('#query').val();
+	
+	// Run GET Request on API
+	$.get(
+		"https://www.googleapis.com/youtube/v3/search", {
+			part: 'snippet, id',
+			q: q,
+			type: 'video',
+			key: 'AIzaSyDIZB_3qSejx0vh0ec5uK2rf9740CY0G90' },
+			function(data) {
+				var nextPageToken = data.nextPageToken;
+				var prevPageToken = data.prevPageToken;
+				
+				// Log Data
+				console.log(data);
+				
+				$.each(data.items, function(i, item) {
+					// Get Output
+					var output = getOutput(item);
+					
+					// Display Results
+					$('#results').append(output);
+				});
+			}
+	);
+}
