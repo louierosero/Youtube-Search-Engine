@@ -110,6 +110,20 @@ a {
 	color: #0364f7;
 }
 
+#container section #search-form #buttons .button-container {
+	margin-top: 25px;
+}
+
+#container section #search-form #buttons .button-container .paging-button {
+	background: #f4f4f4;
+	padding: 8px 13px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+	margin: 10px;
+	cursor: pointer;
+}
+
 #container footer {
 	background: #00255d;
 	text-align: center;
