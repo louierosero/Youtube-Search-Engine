@@ -81,12 +81,41 @@ a {
 	opacity: 0.9;
 }
 
+#container section #search-form #results li {
+	padding: 10px 0;
+	border-bottom: 1px dotted #ccc;
+	list-style: none;
+	overflow: auto;
+}
+
+
+#container section #search-form #results li .list-left {
+	float: left;
+	width: 20%;
+}
+
+
+#container section #search-form #results li .list-left img {
+	width: 100%;
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+
+#container section #search-form #results li .list-right {
+	float: right;
+	width: 78%;
+}
+
+#container section #search-form #results li .list-right .cTitle {
+	color: #0364f7;
+}
+
 #container footer {
 	background: #00255d;
 	text-align: center;
 	font-size: 14px;
 	padding: 10px 0;
-	color: #0c2140;
+	color: #ddd;
 }
 
 .clearfix {
